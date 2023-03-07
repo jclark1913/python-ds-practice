@@ -12,3 +12,18 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+
+    # create running sum
+    # loop through list
+        # if its even, multiply num
+
+    # return 1
+
+    sum = 1
+    print("file ran")
+    for num in nums:
+        if (num % 2) == 0:
+            print("in if condition")
+            sum *= num
+
+    return sum
