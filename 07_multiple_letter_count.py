@@ -8,12 +8,15 @@ def multiple_letter_count(phrase):
         {'Y': 1, 'a': 1, 'y': 1}
     """
 
-    freq = {}
-    
-    for letter in phrase:
-        if letter in freq:
-            freq[letter] += 1
-        else:
-            freq[letter] = 1
+    # freq = {}
+
+    freq = {letter: phrase.count(letter) for letter in phrase}
+
+    # dictionary comprehension w/ .count
+    # for letter in phrase:
+    #     if letter in freq:
+    #         freq[letter] += 1
+    #     else:
+    #         freq[letter] = 1
 
     return freq
